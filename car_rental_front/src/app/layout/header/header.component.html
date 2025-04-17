@@ -1,0 +1,21 @@
+
+    <div class="container mx-auto bg-blue-800 rounded-lg mt-2 px-4">
+      <div class="flex h-16 items-center justify-center">
+        <div class="flex items-center space-x-8">
+          <div class="hidden sm:block">
+            <div class="flex space-x-4">
+              <a routerLink="/" [class]="isHome() ? 'bg-gray-900 p-2 rounded-md text-white' : 'text-gray-300 hover:bg-gray-700 p-2 rounded-md hover:text-white'" >Home</a>
+              <a routerLink="admin" [class]="isAdmin() ? 'bg-gray-900 p-2 rounded-md text-white' : 'text-gray-300 hover:bg-gray-700 p-2 rounded-md hover:text-white'" >Admin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile menu -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pt-2 pb-3">
+        <a routerLink="/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
+        <a routerLink="admin" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Admin</a>
+      </div>
+    </div>

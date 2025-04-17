@@ -1,0 +1,23 @@
+<div class="bg-gray-100 min-h-screen py-8">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold text-center text-gray-900 mb-8">Gestion des Voitures</h1>
+        
+        <div class="flex justify-center gap-4 mb-8">
+            <app-searchbar (search)="searchCars($event)"></app-searchbar>
+            <button routerLink="/addcar" 
+                class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg">
+                Ajouter une voiture
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <app-card 
+                *ngFor="let car of filteredCars" 
+                [car]="car"
+                [showActions]="true"
+                (onDelete)="deleteCar($event)">
+            </app-card>
+        </div>
+    </div>
+</div>
+  

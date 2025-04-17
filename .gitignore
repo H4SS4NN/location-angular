@@ -1,0 +1,37 @@
+# Angular
+/dist
+/tmp
+/out-tsc
+/node_modules
+/.angular/cache
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Dossiers spécifiques
+/car-rental-back/node_modules/
+/car-rental-back/.env
+/car-rental-front/node_modules/
+
+# Build output
+/build
+/dist
+
+# Logs
+logs
+*.log
